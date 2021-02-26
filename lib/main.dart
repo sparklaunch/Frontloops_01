@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import "./PaymentTitle.dart";
+
 void main() => runApp(
       MaterialApp(
         home: Scaffold(
@@ -26,7 +28,12 @@ class Frontloops extends StatelessWidget {
       child: Center(
         child: Container(
           child: Column(
-            children: [],
+            children: [
+              PaymentTitle(),
+              Divider(
+                thickness: 2.0,
+              ),
+            ],
           ),
           margin: EdgeInsets.symmetric(
             vertical: 50.0,
