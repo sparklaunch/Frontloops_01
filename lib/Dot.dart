@@ -4,7 +4,7 @@ Color activeColor = Color.fromRGBO(158, 158, 158, 1);
 Color inActiveColor = Color.fromRGBO(216, 216, 216, 1);
 
 class Dot extends StatelessWidget {
-  bool isActive;
+  final bool isActive;
   Dot({this.isActive});
 
   @override

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import "./PaymentTitle.dart";
+import "./PaymentMethodList.dart";
 
 void main() => runApp(
       MaterialApp(
@@ -33,6 +34,7 @@ class Frontloops extends StatelessWidget {
               Divider(
                 thickness: 2.0,
               ),
+              PaymentMethodList(),
             ],
           ),
           margin: EdgeInsets.symmetric(
@@ -41,7 +43,7 @@ class Frontloops extends StatelessWidget {
           width: 350.0,
           decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(5.0),
+            borderRadius: BorderRadius.circular(8.0),
             boxShadow: [
               BoxShadow(
                 offset: Offset(5.0, 5.0),
