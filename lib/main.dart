@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import "./PaymentTitle.dart";
 import "./PaymentMethodList.dart";
+import "./NextStepButton.dart";
 
 void main() => runApp(
       MaterialApp(
@@ -28,17 +29,17 @@ class Frontloops extends StatelessWidget {
       ),
       child: Center(
         child: Container(
+          clipBehavior: Clip.hardEdge,
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               PaymentTitle(),
               Divider(
                 thickness: 2.0,
               ),
               PaymentMethodList(),
+              NextStepButton(),
             ],
-          ),
-          margin: EdgeInsets.symmetric(
-            vertical: 50.0,
           ),
           width: 350.0,
           decoration: BoxDecoration(

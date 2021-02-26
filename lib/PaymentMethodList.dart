@@ -9,8 +9,8 @@ class PaymentMethodList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      padding: EdgeInsets.all(0.0),
       shrinkWrap: true,
-      scrollDirection: Axis.vertical,
       physics: NeverScrollableScrollPhysics(),
       itemCount: paymentBrain.getPaymentMethods().length,
       itemBuilder: (BuildContext context, int index) {
