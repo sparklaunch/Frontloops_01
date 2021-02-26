@@ -15,7 +15,7 @@ class PaymentMethodList extends StatelessWidget {
       itemCount: paymentBrain.getPaymentMethods().length,
       itemBuilder: (BuildContext context, int index) {
         return PaymentCard(
-          paymentCard: paymentBrain.getPaymentMethods()[index],
+          paymentMethod: paymentBrain.getPaymentMethods()[index],
         );
       },
     );

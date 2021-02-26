@@ -35,6 +35,7 @@ class Frontloops extends StatelessWidget {
             children: [
               PaymentTitle(),
               Divider(
+                height: 2.0,
                 thickness: 2.0,
               ),
               PaymentMethodList(),
